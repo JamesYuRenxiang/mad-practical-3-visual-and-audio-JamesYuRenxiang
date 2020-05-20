@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         MediaPlayer media = MediaPlayer.create(this, R.raw.baby_laughing);
         media.start();
+        media.stop();
         VideoView view = findViewById(R.id.videoView);
         view.setVideoURI(
                 Uri.parse("android.resource://" + getPackageName() + '/' + R.raw.rabbid) );
